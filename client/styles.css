@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: inherit;
 }
 
 body {
-  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-family: "Geologica", sans-serif;
   background: #fff;
   color: #111;
   min-height: 100vh;
