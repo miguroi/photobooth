@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobooth</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="lobby">
+    <h1>Photobooth</h1>
+    <button id="create-btn">Create Room</button>
+    <div class="join-section">
+      <input type="text" id="room-input" placeholder="Enter room code" maxlength="6">
+      <button id="join-btn">Join</button>
+    </div>
+    <p id="room-code"></p>
+  </div>
+
+  <div id="booth" hidden>
+    <button id="back-btn">← Back</button>
+    <div class="videos">
+      <div class="video-container">
+        <video id="local-video" autoplay muted playsinline></video>
+        <span>You</span>
+      </div>
+      <div class="video-container">
+        <video id="remote-video" autoplay playsinline></video>
+        <span>Friend</span>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="photo-btn">Take Photo</button>
+      <button id="mirror-btn">Mirror: On</button>
+    </div>
+    <div id="photos"></div>
+  </div>
+
+  <canvas id="canvas" hidden></canvas>
+  <script src="app.js"></script>
+</body>
+</html>

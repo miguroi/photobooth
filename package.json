@@ -1,0 +1,17 @@
+{
+  "name": "photobooth",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun build ./client/app.ts --outdir ./client --outfile app.js",
+    "start": "bun run build && bun run index.ts",
+    "dev": "bun run build && bun --watch run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
