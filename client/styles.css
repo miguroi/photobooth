@@ -53,8 +53,9 @@ body {
   border: 1px solid #ddd;
   border-radius: 6px;
   text-transform: uppercase;
-  width: 140px;
+  width: 200px;
   outline: none;
+  text-align: center;
 }
 
 #room-input:focus {
